@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnEx"
+        android:layout_width="wrap_content"
+        android:layout_height="49dp"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/rounder3"
+        android:fontFamily="serif"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:text="Back"
+        android:textColor="#F8F2F2"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnNext"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="28dp"
+        android:background="@drawable/rounder3"
+        android:fontFamily="serif"
+        android:paddingLeft="80dp"
+        android:paddingRight="80dp"
+        android:text="Register"
+        android:textColor="#F8F2F2"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/editName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="50dp"
+        android:ems="10"
+        android:hint="Enter Name"
+        android:inputType="textPersonName"
+        android:textColor="#0C0C0C"
+        android:textColorHint="#050505"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/editUni"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/editUni" />
+
+    <EditText
+        android:id="@+id/editUni"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="48dp"
+        android:ems="10"
+        android:hint="Enter University"
+        android:inputType="textPersonName"
+        android:textColor="#0C0C0C"
+        android:textColorHint="#050505"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/editFac"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/editFac" />
+
+    <EditText
+        android:id="@+id/editFac"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="50dp"
+        android:ems="10"
+        android:hint="Enter Faculty"
+        android:inputType="textPersonName"
+        android:textColor="#0C0C0C"
+        android:textColorHint="#050505"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/edituname"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/edituname" />
+
+    <EditText
+        android:id="@+id/edituname"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="50dp"
+        android:ems="10"
+        android:hint="Enter User Name"
+        android:inputType="textPersonName"
+        android:textColor="#0C0C0C"
+        android:textColorHint="#050505"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/editLogUname"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/editLogUname" />
+
+    <EditText
+        android:id="@+id/editLogUname"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="50dp"
+        android:ems="10"
+        android:hint="Enter Password"
+        android:inputType="textPassword"
+        android:textColor="#0C0C0C"
+        android:textColorHint="#050505"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/editRepass"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/editRepass" />
+
+    <EditText
+        android:id="@+id/editRepass"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="16dp"
+        android:ems="10"
+        android:hint="Enter Re-Password"
+        android:inputType="textPassword"
+        android:textColor="#0C0C0C"
+        android:textColorHint="#050505"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnNext"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="Re Enter Password"
+        android:textColor="#4E0707"
+        app:layout_constraintBottom_toTopOf="@+id/editRepass"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/editRepass" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginBottom="8dp"
+        android:text="Password"
+        android:textColor="#4E0707"
+        app:layout_constraintBottom_toTopOf="@+id/editLogUname"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/editLogUname" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="User Name"
+        android:textColor="#4E0707"
+        app:layout_constraintBottom_toTopOf="@+id/edituname"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/edituname" />
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="Faculty"
+        android:textColor="#4E0707"
+        app:layout_constraintBottom_toTopOf="@+id/editFac"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/editFac" />
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="University"
+        android:textColor="#4E0707"
+        app:layout_constraintBottom_toTopOf="@+id/editUni"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/editUni" />
+
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="Your Name"
+        android:textColor="#4E0707"
+        app:layout_constraintBottom_toTopOf="@+id/editName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/editName" />
+</androidx.constraintlayout.widget.ConstraintLayout>

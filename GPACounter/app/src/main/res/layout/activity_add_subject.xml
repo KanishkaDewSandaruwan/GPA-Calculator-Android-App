@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F5F5"
+    tools:context=".AddSubject">
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:text="Add Subject "
+        android:textColor="#090909"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView14"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.076" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Subject Name"
+        android:textColor="#070707"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/editAddSubName"
+        app:layout_constraintEnd_toEndOf="@+id/editAddSubName"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/editAddSubName" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Grade"
+        android:textColor="#070707"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/editAddGrade"
+        app:layout_constraintEnd_toEndOf="@+id/editAddGrade"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/editAddGrade" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Credit"
+        android:textColor="#070707"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/editAddCredit"
+        app:layout_constraintEnd_toEndOf="@+id/editAddCredit"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/editAddCredit" />
+
+    <EditText
+        android:id="@+id/editAddSubName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/editAddGrade"
+        app:layout_constraintEnd_toEndOf="@+id/editAddGrade"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/editAddGrade" />
+
+    <EditText
+        android:id="@+id/editAddGrade"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="112dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/editAddCredit"
+        app:layout_constraintEnd_toEndOf="@+id/editAddCredit"
+        app:layout_constraintStart_toStartOf="@+id/editAddCredit" />
+
+    <EditText
+        android:id="@+id/editAddCredit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="140dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnAddSub_MainSubpage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnAddSubBack"
+        android:layout_width="184dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="24dp"
+        android:background="@drawable/rounder3"
+        android:fontFamily="serif"
+        android:text="Back"
+        android:textColor="#F6F2F2"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnAddSub_MainSubpage"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnAddSub_MainSubpage"
+        android:layout_width="172dp"
+        android:layout_height="53dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/rounder3"
+        android:fontFamily="serif"
+        android:text="Add"
+        android:textColor="#F6F2F2"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="209dp"
+        android:layout_height="19dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="84dp"
+        android:text="Use Capital Letters for Grade"
+        android:textColor="#730606"
+        app:layout_constraintBottom_toTopOf="@+id/editAddCredit"
+        app:layout_constraintEnd_toEndOf="@+id/editAddCredit"
+        app:layout_constraintTop_toBottomOf="@+id/editAddGrade" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F6F3F3"
+    tools:context=".EditSemester">
+
+    <EditText
+        android:id="@+id/editEditSubject"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="80dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/editEditGrade"
+        app:layout_constraintEnd_toEndOf="@+id/editEditGrade"
+        app:layout_constraintStart_toStartOf="@+id/editEditGrade" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="32dp"
+        android:text="Edit Subject"
+        android:textColor="#7C0606"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/edi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Subject Name"
+        android:textColor="#040303"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/editEditSubject"
+        app:layout_constraintEnd_toEndOf="@+id/editEditSubject"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/editEditSubject" />
+
+    <EditText
+        android:id="@+id/editEditCredit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="80dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/editEditSubject"
+        app:layout_constraintEnd_toEndOf="@+id/editEditSubject"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/editEditSubject" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Grade"
+        android:textColor="#040303"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/editEditGrade"
+        app:layout_constraintEnd_toEndOf="@+id/editEditGrade"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/editEditGrade" />
+
+    <EditText
+        android:id="@+id/editEditGrade"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="80dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnEditSubjectSave"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.11"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/edi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Credit"
+        android:textColor="#040303"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/editEditCredit"
+        app:layout_constraintEnd_toEndOf="@+id/editEditCredit"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/editEditCredit" />
+
+    <Button
+        android:id="@+id/btnEditSubjectSave"
+        android:layout_width="152dp"
+        android:layout_height="55dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/rounder3"
+        android:fontFamily="serif"
+        android:text="Save "
+        android:textColor="#FBFAFA"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btnbackEdit"
+        android:layout_width="159dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="24dp"
+        android:background="@drawable/rounder3"
+        android:fontFamily="serif"
+        android:text="Back"
+        android:textColor="#FBFAFA"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnEditSubjectSave"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView28"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Use Capital Letters"
+        android:textColor="#470707"
+        app:layout_constraintBottom_toTopOf="@+id/editEditGrade"
+        app:layout_constraintEnd_toEndOf="@+id/editEditGrade"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/editEditGrade" />
+</androidx.constraintlayout.widget.ConstraintLayout>
